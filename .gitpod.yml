@@ -9,8 +9,9 @@ tasks:
       ddev drush si -y --account-pass=admin --site-name='Gutenberg Starter'
       ddev drush en -y admin_toolbar
       ddev drush en -y gutenberg
-      ddev drush en -y gutenberg_starter
-      ddev drush config-set system.theme default gutenberg_starter
+      ddev drush theme:enable -y gutenberg_starter
+      ddev drush config-set -y system.theme default gutenberg_starter
+      ddev drush theme:uninstall -y olivero
     command: |
       ddev start -y
       gp ports await 8080 && gp preview $(gp url 8080)
