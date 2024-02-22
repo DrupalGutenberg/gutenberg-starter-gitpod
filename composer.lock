@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0363b3eba6216623e75f6abff4d7ef4",
+    "content-hash": "9dd450e49bb8be2f992cf9e5eaf5aa50",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -889,25 +889,28 @@
         },
         {
             "name": "drupal/gutenberg",
-            "version": "dev-2.x",
+            "version": "dev-3.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gutenberg.git",
-                "reference": "4a6838b16abeeb46a42abae8b10918d29aaebdcf"
+                "reference": "d763752143343f84b5f71ad17844221658d75ea4"
             },
             "require": {
-                "drupal/core": "^9 || ^10",
+                "drupal/core": "^9.5 || ^10",
                 "ext-json": "*",
                 "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpspec/prophecy-phpunit": "^2"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.x-dev"
+                    "dev-3.0.x": "3.0.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.8+3-dev",
-                    "datestamp": "1699061615",
+                    "version": "3.0.0-beta5+13-dev",
+                    "datestamp": "1708535706",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -940,6 +943,10 @@
                     "homepage": "https://www.drupal.org/u/szeidler"
                 },
                 {
+                    "name": "perandre",
+                    "homepage": "https://www.drupal.org/user/221337"
+                },
+                {
                     "name": "roborn",
                     "homepage": "https://www.drupal.org/user/139474"
                 },
@@ -965,17 +972,11 @@
         },
         {
             "name": "drupal/gutenberg_starter",
-            "version": "1.0.0-beta2",
+            "version": "dev-1.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gutenberg_starter.git",
-                "reference": "1.0.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gutenberg_starter-1.0.0-beta2.zip",
-                "reference": "1.0.0-beta2",
-                "shasum": "969c636191a00ee924047d113d29e0e4db21be3e"
+                "reference": "7f444d6376e3e304b920d82d464d9db0c9ae99b9"
             },
             "require": {
                 "drupal/core": "^10",
@@ -983,9 +984,12 @@
             },
             "type": "drupal-theme",
             "extra": {
+                "branch-alias": {
+                    "dev-1.0.x": "1.0.x-dev"
+                },
                 "drupal": {
-                    "version": "1.0.0-beta2",
-                    "datestamp": "1699808059",
+                    "version": "1.0.0-beta2+2-dev",
+                    "datestamp": "1708613445",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -1000,6 +1004,10 @@
                 {
                     "name": "marcofernandes",
                     "homepage": "https://www.drupal.org/user/2127558"
+                },
+                {
+                    "name": "thorandre",
+                    "homepage": "https://www.drupal.org/user/223878"
                 }
             ],
             "description": "A good starting point for developers to create a custom theme for Drupal Gutenberg content.<br/><a href='https://www.drupal.org/docs/contributed-themes/gutenberg_starter'>Check theme's documentation.</a><br/>\nInstall/enable Gutenberg module before enabling this theme.\n<div role=\"contentinfo\" aria-labelledby=\"message-warning-title\" class=\"messages-list__item messages messages--warning\">\n  <div class=\"messages__header\">\n    <h2 id=\"message-warning-title\" class=\"messages__title\">\n      Warning\n    </h2>\n  </div>\n  <div class=\"messages__content\">\n    This theme is not intended to be used in production environments, just as a reference.\n  </div>\n</div>",
@@ -6207,7 +6215,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/gutenberg": 20,
-        "drupal/gutenberg_starter": 10
+        "drupal/gutenberg_starter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
